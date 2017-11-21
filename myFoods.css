@@ -1,0 +1,512 @@
+	html,body,ul,li,h1,h2,h3,h4,h5,h6,p{
+			padding:0px;
+			margin:0px;
+		}
+
+	.Header{
+	width: 1400px;
+	height: 115px;
+	background-color: #f4f0d5;
+    /*position: fixed;
+    top:10px;*/
+    }
+ 	.Header1{
+        float: left;
+ 		width:945px;
+ 		height:115px;
+ 		margin-left: 225px;
+ 		margin-right: 235px
+ 	}
+    .Header1::after,.Header1::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .Header2{
+        float: right;
+        position: relative;
+        bottom: 45px;
+    }
+
+    .logo::after,.logo::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .logo {
+        width: 125px;
+        height: 115px;
+    }
+    .logo img{
+    	width: 125px;
+    	height: 115px;
+    }
+
+    }
+    .button {
+    background-color:#f4f0d5; 
+    border: none;
+    color: white;
+    padding: 26px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+     }
+    .Registration{
+        height: 45px;
+        float: right;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        position: relative;
+        bottom: 50px;
+        left: 10px;
+    }
+    button.Register{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f4f0d5;
+    width: 145px;
+    height: 40px;
+    }
+    .Register:hover{
+    background-color: #f4f0d5;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+    }
+    .menu ul{
+    	list-style-type: none;
+        text-decoration:none;
+
+    }
+    .menu1 li{
+    	text-decoration: none;
+    	float: left;
+    	position: relative;
+        bottom: 50px;
+        left: 10px;
+    }
+    .menu::after,.menu::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .menu1::after,.menu1::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .menu{
+        background-color: #566b30;
+        height:45px;
+        width:760px;
+    }
+ /*   ------------------------------------------Side Navigation ----------------------------------------*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.nav-side{
+    width: 200px;
+    height: 72px;
+    position: absolute;
+    top: 1px;
+}
+.nav-side::after,.nav-side::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+#main {
+    width: 200px;
+    transition: margin-left .5s;
+    padding: 16px;
+    background-color: #f4f0d5;
+   
+}
+#main ::after,#main ::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+  /*  --------------------------------------END Side Navigation ----------------------------------------*/
+ /*  --- slide show css below-------------------------------------------------------------------------- */
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+.showTime{
+    width: 1400px;
+    height: 400px;
+    background-color: #f4f0d5;
+    }
+
+/*Slideshow container*/
+.slideshow-container{
+  max-width: 980px;
+  max-height: 390px;
+  position: relative;
+  margin: auto;
+}
+/*Next & Previous Buttons*/
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 15px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 0 3px;
+}
+/*Keeping the next Button to the right*/
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-left: 30px;
+}
+/*For Next and Prev add Hover */
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+/*Adding Caption to the Slides*/
+.text1{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/*Numbering the slides*/
+.numbertext{
+   color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; 
+}
+/*The Dots in Below*/
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6 ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+ .mySlides::after,.mySlides::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*  --- slide show css ends-------------------------------------------------------------------------- */
+/*  --- CONTENT BEGINGS-------------------------------------------------------------------------- */
+
+.content{
+    max-width: 940px;
+    max-height: 330px;
+    margin: auto;
+}
+.Welcome{
+    font-family:Lucida Sans Unicode;
+}
+.Welcome em {
+  font-family:Lucida Sans Unicode;
+  color: #839367;
+}
+.para{
+    font-size: 15px;
+}
+.discription{
+    width: 670px;
+    position: relative;
+    top: 40px;
+}
+.Read{
+    position: relative;
+    top: 50px;
+}
+button.Read1{
+   background-color: green;
+}
+
+.discription-img img{
+  float: right;
+  position: relative;
+  bottom: 290px;
+  left: 50px;
+}
+/* ...................End of discription & Start of Gallery......................*/
+.gallery{
+    
+    max-width: 940px;
+    max-height: 185px;
+    margin: auto;
+    position: relative;
+    top: 80px;
+}
+.gallery ::after,.gallery2 ::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+.gallery2 ul{
+    
+    max-width: 940px;
+    max-height: 185px;
+    margin: auto;
+}
+.gallery2 li{
+    float: left;
+    list-style-type: none;
+    text-decoration:none;
+    margin: 10px;
+    /*/*position: relative;
+    top: 60px;*/
+}
+ .gallery2 ul::after,.gallery2 ul::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+.gallery2 ::after,.gallery2 ::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+/*.....................feedback.............................*/
+.interaction{
+    max-width: 940px;
+    max-height: 330px;
+    margin: auto;
+    float: left;
+}
+
+.feedback ::after,.feedback ::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+.feedback{
+    float: left;
+    height: 275px;
+    max-width: 270px;
+    margin: auto;
+    font-family:Lucida Sans Unicode;
+    color: #839367;
+    position: relative;
+    right: 295px;
+    top: 80px;
+}
+.whats-new::after,.whats-new::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+.whats-new{
+    height: 275px;
+    max-width: 270px;
+    margin: auto;
+    font-family:Lucida Sans Unicode;
+    color: #839367;
+    position: relative;
+    bottom: 195px;
+    left: 10px;
+}
+.find-us{
+    font-family:Lucida Sans Unicode;
+    color: #839367;
+    float: right;
+    position: relative;
+    left: 200px;
+    bottom: 190px;
+}
+.fa {
+      padding: 10px;
+      font-size: 40px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+/*.......................End & Start Of Footer................................*/
+.footer{
+    float: left;
+    width: 1400px;
+    height: 260px; 
+    position: relative;
+    top: 0px;
+    /*background-image:url(images\footer.png);*/
+}
+.footer::after,.footer::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+.back img{
+    position: relative;
+    top: 110px;
+}
+.cont::after,.cont::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+.cont{
+    width: 980px;
+    height: 260px;
+    position: relative;
+    bottom: 120px;
+}
+.Quicklinks{
+     font-family:Lucida Sans Unicode;
+    color: #515638;
+    width:220px;
+    height: 250px;
+    text-decoration:none; 
+    position: relative;
+    left: 220px;
+    bottom: 0px;
+}
+.Quicklinks ul li{
+    text-decoration:none; 
+    list-style: none;
+}
+.Quicklinks::after,.Quicklinks::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+.signup{
+    font-family:Lucida Sans Unicode;
+    color: #566b30;
+    width:400px;
+    height: 250px;
+    position: relative;
+    left: 530px;
+    bottom: 250px;
+}
+.signup::after,.signup::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+.reachus{
+    font-family:Lucida Sans Unicode;
+    color: #515638;
+    float: right;
+    width:220px;
+    height: 250px;
+    position: relative;
+    left: 150px;
+    bottom: 500px;
+}
+.footer1{
+    float: right;
+    position: relative;
+    bottom: 315px;
+    left: 500px;
+}
+.by{
+
+}
+.footer1::after,.footer1::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+

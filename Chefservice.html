@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HobbyFoody-Chef Service</title>
+	<link href="D:\html\foods\images\logo1.png" type="image/x-icon" rel="shortcut icon">
+
+</head>
+<style type="text/css">
+     	html,body,ul,li,h1,h2,h3,h4,h5,h6,p{
+			padding:0px;
+			margin:0px;
+		}
+	.Header{
+	width: 1400px;
+	height: 115px;
+	background-color: #f4f0d5;
+    /*position: fixed;
+    top:10px;*/
+    }
+ 	.Header1{
+        float: left;
+ 		width:945px;
+ 		height:115px;
+ 		margin-left: 225px;
+ 		margin-right: 235px
+ 	}
+    .Header1::after,.Header1::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .Header2{
+        float: right;
+        position: relative;
+        bottom: 45px;
+    }
+
+    .logo::after,.logo::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .logo {
+        width: 125px;
+        height: 115px;
+    }
+    .logo img{
+    	width: 125px;
+    	height: 115px;
+    }
+
+    }
+    .button {
+    background-color:#f4f0d5; 
+    border: none;
+    color: white;
+    padding: 26px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+     }
+    .Registration{
+        height: 45px;
+        float: right;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        position: relative;
+        bottom: 50px;
+        left: 10px;
+    }
+    button.Register{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f4f0d5;
+    width: 145px;
+    height: 40px;
+    }
+    .Register:hover{
+    background-color: #f4f0d5;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+    }
+    .menu ul{
+    	list-style-type: none;
+        text-decoration:none;
+       /* padding-left: 20px;
+        font-size: 18px;*/
+
+    }
+    .menu1 li{
+    	text-decoration: none;
+    	float: left;
+    	position: relative;
+        bottom: 50px;
+        left: 10px;
+    }
+    .menu::after,.menu::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .menu1::after,.menu1::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .menu{
+        background-color: #566b30;
+        height:45px;
+        width:760px;
+    }
+    * {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+    
+    .content{
+    	width: 940px;
+    	margin:auto;
+
+    }
+
+    .content h2,h4,h3{
+    	font-family:Lucida Sans Unicode;
+        color: #839367;
+    }
+    .head-list{
+    	margin-left: 20px;
+    }
+/*   ------------------------------------------Side Navigation ----------------------------------------*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.nav-side{
+    width: 200px;
+    height: 72px;
+    position: absolute;
+    top: 1px;
+}
+.nav-side::after,.nav-side::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+#main {
+    width: 200px;
+    transition: margin-left .5s;
+    padding: 16px;
+    background-color: #f4f0d5;
+   
+}
+#main ::after,#main ::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+  /*  --------------------------------------END Side Navigation ----------------------------------------*/
+
+</style>
+<body>
+<div class="Header">
+    <div class="Header1">
+		    <div class="logo">
+		    	<img src="D:\html\foods\images\logo1.png">
+		    </div>
+		    <div class="Header2">
+			    <div class="Registration">
+			    	<a href="file:///D:/html/foods/contactus.html">
+			    	<button class="Register" >REGISTER NOW</button>
+			    	</a>
+			    </div>
+			    <div class="menu">
+			    <ul class="menu1">
+			    		<li><a href="file:///D:/html/foods/myFoods.html" style="text-decoration:none; color:white; margin-left:10px;margin-right: 10px" >HOME</a></li>
+			    		<li><a href="file:///D:/html/foods/aboutus.html" style="text-decoration:none; color:white;margin-left:10px;margin-right: 10px" >ABOUT US</a></li>
+			    		<li><a href="file:///D:\html\foods\Chefservice.html" style="text-decoration:none; color:white;margin-left:10px;margin-right: 10px" >CHEF SERVICE</a></li>
+			    		<li><a href="file:///D:/html/foods/chefconsulting.html" style="text-decoration:none; color:white;margin-left:10px;margin-right: 20px" >CHEF CONSULTING</a></li>
+			    		<li><a href="file:///D:/html/foods/training.html" style="text-decoration:none; color:white" >TRAINING</a></li>
+			    		<li><a href="file:///D:/html/foods/contactus.html" style="text-decoration:none; color:white;margin-left:20px" >CONTACT US</a></li>
+			    	</ul>
+			    </div>
+			</div>
+	</div>
+</div>
+<!-- ..........................................Side Navigation ................................... -->
+<div class="nav-side">	
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="file:///D:/html/foods/myFoods.html">HOME</a>
+		  <a href="file:///D:/html/foods/aboutus.html">ABOUT US</a>
+		  <a href="file:///D:\html\foods\Chefservice.html">CHEF SERVICE</a>
+		  <a href="file:///D:/html/foods/chefconsulting.html">CHEF CONSULTING</a>
+		  <a href="file:///D:/html/foods/training.html">TRAINING</a>
+		  <a href="file:///D:/html/foods/contactus.html">CONTACT US</a>
+		</div>
+
+		<div id="main">
+		  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+		</div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<!-- .......................................... END Side Navigation  ................................... -->
+<div class="content">
+     <div class="head">
+       <h2>Cooking Chef Services Avaliable</h2><br>
+       <p>Parties and social events are held every day by many people and having quality food is very important. Delicious meal created for certain event, certain guests adds a touch of elegance and makes a party unforgettable. If you plan on becoming a host then certain questions regarding the cooking will arise. For example: </p>
+     </div>
+     <br>
+     <br>
+     <div class="head-list">
+        <ul>
+        	<li>Who can carry out this task?</li>
+        	<li>How will they organize their work?</li>
+        	<li>What will be their job on the event?</li>
+        	<li>Is it an individual person or a group of people?</li>
+        	<li>If I want to hire a private chef where shall I find one?</li>
+        </ul>
+     </div>
+     <br>
+     <div class="head1">
+       <h4>Who are they?</h4>
+       <p>The best way to reach a person's heart is through their stomach; this is the job of a chef or a private cook. Such people are also called in home chefs and are available in Hyderabad for providing their service when they are hired. Personal cook can create a customized menu which will suit booth your needs and wishes.</p><br>
+       <h4>What do they do?</h4>
+       <p>Meal preparation is done by the private chef you’ve hired and his team. You can also hire a catering service, they will make your life much easier. If the event is big your chef might need help and it is better if he brings people he knows and trusts. If you’ve hired a professional cook you don’t need to worry about the ingredients, he will take care of it himself. Sounds wonderful, but unfortunately finding the right chef or catering services is really difficult.</p><br>
+       <h4>How are the meals prepared?</h4>
+       <p>Once the chef has been chosen, the menu you’ve agreed on with a list of all the selected cuisines has to be sent to him. The menu may contain any kind of customized meals you wish.</p><br>
+       <h4>Why is an additional staff required?</h4>
+       <p>There is no such chef who is equally good at cooking meat and baking cakes. He sure can do all the things required, but it is better to hire several professionals from Hyderabad who have all the required skills. Assistance is always required from time to time. Gathering together a number of reliable people to form the perfect team is essential if you want your event to be just perfect. These people will help in the preparation of the meals and take care of any necessary things to be carried out during the event.</p><br>
+     </div>
+
+</div>
+<div class="footer">
+     <div class="back">
+       <img src="images\footer.png" style="width: 1400px;height: 250px">
+     </div>
+   <div class="cont">
+     <div class="Quicklinks">
+       <h3>QUICK LINKS</h3>
+       <ul class="quick">
+    
+	      <li><a href="#" style="text-decoration:none; color:black" >HOME</a></li>
+		  <li><a href="#" style="text-decoration:none; color:black" >ABOUT US</a></li>
+		  <li><a href="#" style="text-decoration:none; color:black" >CHEF SERVICE</a></li>
+		  <li><a href="#" style="text-decoration:none; color:black" >CHEF CONSULTING</a></li>
+	      <li><a href="#" style="text-decoration:none; color:black" >TRAINING</a></li>
+	      <li><a href="#" style="text-decoration:none; color:black" >CONTACT US</a></li>
+	   </ul>
+      </div>
+      <div class="signup">
+         <h3>SIGN UP FOR NEWS LETTERS</h3>
+         <p>To Recieve Letters</p>
+         <form action="#">
+         <input type="text" name="Email" value="Enter EmailId" style="width: 300px;"><br>
+         <input type="submit" value="Submit">
+         </form>
+      </div>
+      <div class="reachus">
+         <h3>REACH US </h3>
+         <p>HOBBYFOODY</p>
+         <p>Beside Campus</p>
+         <p>Left turn</p>
+         <p>hobbyfoody@gmail.com ✉</p>
+         <p>+91 1234567890 ☎</p>
+
+      </div>
+      <div class="footer1">
+          <h5>© Copyright 2017.All Rights Recieved.</h5>
+
+      </div>
+   </div>
+</div>
+
+
+</body>
+</html>

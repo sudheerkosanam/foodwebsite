@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HobbyFoody-Chef-Consulting</title>
+	<link href="D:\html\foods\images\logo1.png" type="image/x-icon" rel="shortcut icon">
+</head>
+<style type="text/css">
+     	html,body,ul,li,h1,h2,h3,h4,h5,h6,p{
+			padding:0px;
+			margin:0px;
+		}
+	.Header{
+	width: 1400px;
+	height: 115px;
+	background-color: #f4f0d5;
+    /*position: fixed;
+    top:10px;*/
+    }
+ 	.Header1{
+        float: left;
+ 		width:945px;
+ 		height:115px;
+ 		margin-left: 225px;
+ 		margin-right: 235px
+ 	}
+    .Header1::after,.Header1::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .Header2{
+        float: right;
+        position: relative;
+        bottom: 45px;
+    }
+
+    .logo::after,.logo::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .logo {
+        width: 125px;
+        height: 115px;
+    }
+    .logo img{
+    	width: 125px;
+    	height: 115px;
+    }
+
+    }
+    .button {
+    background-color:#f4f0d5; 
+    border: none;
+    color: white;
+    padding: 26px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+     }
+    .Registration{
+        height: 45px;
+        float: right;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        position: relative;
+        bottom: 50px;
+        left: 10px;
+    }
+    button.Register{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f4f0d5;
+    width: 145px;
+    height: 40px;
+    }
+    .Register:hover{
+    background-color: #f4f0d5;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+    }
+    .menu ul{
+    	list-style-type: none;
+        text-decoration:none;
+        /* padding-left: 20px;
+        font-size: 18px;
+*/
+    }
+    .menu1 li{
+    	text-decoration: none;
+    	float: left;
+    	/*margin-left: 10px;
+    	margin-right: 10px;*/
+    	position: relative;
+        bottom: 50px;
+        left: 10px;
+    }
+    .menu::after,.menu::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .menu1::after,.menu1::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    .menu{
+        background-color: #566b30;
+        height:45px;
+        width:760px;
+    }
+    * {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+/*   ------------------------------------------Side Navigation ----------------------------------------*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.nav-side{
+    width: 200px;
+    height: 72px;
+    position: absolute;
+    top: 1px;
+}
+.nav-side::after,.nav-side::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+#main {
+    width: 200px;
+    transition: margin-left .5s;
+    padding: 16px;
+    background-color: #f4f0d5;
+   
+}
+#main ::after,#main ::before{
+    content: "";
+    display: block;
+    clear: both;
+    }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+  /*  --------------------------------------END Side Navigation ----------------------------------------*/
+
+</style>
+<body>
+<div class="Header">
+    <div class="Header1">
+		    <div class="logo">
+		    	<img src="D:\html\foods\images\logo1.png">
+		    </div>
+		    <div class="Header2">
+			    <div class="Registration">
+			    	<a href="file:///D:/html/foods/contactus.html">
+			    	<button class="Register" >REGISTER NOW</button>
+			    	</a>
+			    </div>
+			    <div class="menu">
+			    <ul class="menu1">
+			    		<li><a href="file:///D:/html/foods/myFoods.html" style="text-decoration:none; color:white; margin-left:10px;margin-right: 10px" >HOME</a></li>
+			    		<li><a href="file:///D:/html/foods/aboutus.html" style="text-decoration:none; color:white;margin-left:10px;margin-right: 10px" >ABOUT US</a></li>
+			    		<li><a href="file:///D:\html\foods\Chefservice.html" style="text-decoration:none; color:white;margin-left:10px;margin-right: 10px" >CHEF SERVICE</a></li>
+			    		<li><a href="file:///D:/html/foods/chefconsulting.html" style="text-decoration:none; color:white;margin-left:10px;margin-right: 20px" >CHEF CONSULTING</a></li>
+			    		<li><a href="file:///D:/html/foods/training.html" style="text-decoration:none; color:white" >TRAINING</a></li>
+			    		<li><a href="file:///D:/html/foods/contactus.html" style="text-decoration:none; color:white;margin-left:20px" >CONTACT US</a></li>
+			    	</ul>
+			    </div>
+			</div>
+	</div>
+</div>
+<!-- ..........................................Side Navigation ................................... -->
+<div class="nav-side">	
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="file:///D:/html/foods/myFoods.html">HOME</a>
+		  <a href="file:///D:/html/foods/aboutus.html">ABOUT US</a>
+		  <a href="file:///D:\html\foods\Chefservice.html">CHEF SERVICE</a>
+		  <a href="file:///D:/html/foods/chefconsulting.html">CHEF CONSULTING</a>
+		  <a href="file:///D:/html/foods/training.html">TRAINING</a>
+		  <a href="file:///D:/html/foods/contactus.html">CONTACT US</a>
+		</div>
+
+		<div id="main">
+		  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+		</div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<!-- .......................................... END Side Navigation  ................................... -->
+
+</body>
+</html>
